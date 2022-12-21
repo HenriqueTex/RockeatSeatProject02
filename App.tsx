@@ -1,5 +1,5 @@
 
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 
 import { ThemeProvider } from 'styled-components';
 
@@ -19,7 +19,7 @@ export default function App() {
 	return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle={"light-content"} backgroundColor="transparent" translucent/>
-      {fontsLoaded ? <NewGroup /> : <Loading/>}
+      {fontsLoaded ? <Players /> : <Loading/>}
     </ThemeProvider>
   );
 }
